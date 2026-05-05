@@ -7,14 +7,20 @@
 // ! (NÃO) - Inverte o valor lógico da expressão.
 // XOR (OU Exclusivo) - Retorna true se apenas uma das expressões for verdadeira, mas não ambas.
 // OR (OU) - Retorna true se pelo menos uma das expressões for verdadeira (semelhante ao ||).
-
+// AND (E) - Retorna true se ambas as expressões forem verdadeiras (semelhante ao &&).
 // Exemplo de uso dos operadores lógicos
-$variavel1 = true;
-$variavel2 = false;
-echo "Variável 1: " . ($variavel1 ? "verdadeira" : "falsa") . "<br>";
-echo "Variável 2: " . ($variavel2 ? "verdadeira" : "falsa") . "<br>";
-echo "Variável 1 && Variável 2: " . (($variavel1 && $variavel2) ? "verdadeira" : "falsa") . "<br>";
-echo "Variável 1 || Variável 2: " . (($variavel1 || $variavel2) ? "verdadeira" : "falsa") . "<br>";
-echo "!Variável 1: " . ((!$variavel1) ? "verdadeira" : "falsa") . "<br>";
-echo "Variável 1 XOR Variável 2: " . (($variavel1 xor $variavel2) ? "verdadeira" : "falsa") . "<br>";
-echo "Variável 1 OR Variável 2: " . (($variavel1 || $variavel2) ? "verdadeira" : "falsa") . "<br>";
+
+//OPERADOR AND (&&)
+
+$valor1 = true;
+$valor2 = true;
+
+if($valor1 and $valor2){ // Avalia se valor1 e valor2 são verdadeiros
+    echo 'Verdadeiro'; // se amobos forem verdadeiros 
+}else{
+    echo 'Falso'; // se um ou ambos forem falsos    
+}
+echo "<br>" . "\n";
+?>
+
+
