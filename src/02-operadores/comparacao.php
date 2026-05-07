@@ -58,3 +58,4 @@ if($valor1 <= $valor2){ // Avalia se valor1 é menor ou igual a valor2
 }
 echo "<br>" . "\n";
 
+
