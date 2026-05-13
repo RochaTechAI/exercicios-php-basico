@@ -6,4 +6,16 @@ services:
       - "8080:80"
     volumes:
       - ./src:/var/www/html
+    # Comando para instalar a extensão necessária para as funções das fotos
+    command: sh -c "docker-php-ext-install mysqli && apache2-foreground"
     restart: always
+
+  db:
+    image: mysql:8.0
+    container_name: banco-mysql
+    restart: always
+    environment:
+      MYSQL_DATABASE: dbLocadora
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306"
