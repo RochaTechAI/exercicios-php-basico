@@ -12,8 +12,8 @@
  echo "A idade do aluno é $idadeAluno." . "<br>" . "\n";
  
  // FLOAT / DOUBLE
- $pi = 3.14159; // tipo float (também conhecido como double)
- echo "O valor de pi é aproximadamente $pi." . "<br>" . "\n";
+ $PI = 3.14159; // tipo float (também conhecido como double)
+ echo "O valor de pi é aproximadamente $PI." . "<br>" . "\n";
 
  // STRING  
  $nomeAluno = "João"; // tipo string
